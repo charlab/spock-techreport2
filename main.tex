@@ -1,0 +1,35 @@
+\documentclass[pageno]{jpaper}
+
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage[normalem]{ulem}
+
+\begin{document}
+
+\title{A Time-to-Recache Case Study}
+
+\author{Eric Storm \and Josef Spjut}
+\date{}
+\maketitle
+
+%\thispagestyle{empty}
+
+\begin{abstract}
+\input{00-abstract.tex}
+\end{abstract}
+
+\input{01-introduction.tex}
+\input{02-motivation.tex}
+\input{03-methodology.tex}
+\input{04-results.tex}
+\input{05-analysis.tex}
+\input{06-relatedwork.tex}
+\input{07-conclusions.tex}
+
+\bstctlcite{bstctl:etal, bstctl:nodash, bstctl:simpurl}
+\bibliographystyle{IEEEtranS}
+\bibliography{references}
+
+
+\end{document}
+

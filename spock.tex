@@ -1,0 +1,48 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\title{Qualitative Cache Performance Analysis}
+
+\author{}
+%\author{Andrew Carter \and Max Korbel \and Paula Ning \and Seth Pugsley \and Josef Spjut}
+
+\maketitle
+
+\begin{abstract}
+The effectiveness of caching policies has been measured by a number of metrics. 
+The ultimate quantitative measure is overall system performance.
+Other metrics such as hit rate, misses per thousand instructions and
+instructions per cycle are also regularly used in the literature to
+compare cache behaviors.
+In this work we propose a novel class of metrics based on the idea
+that any memory element should ideally be kept out of the cache
+for as long as possible before being fetched again, an idea inspired
+by Belady's algorithm.
+In general we measure the Time to Recache for each evicted element as a qualitative measurement of a caching policy's performance.
+Among this set of metrics, we analyze the number of Memory Accesses and Memory Misses to Recache, as well as a rough approximation
+of Wall-Time to Recache.
+We believe that these metrics will not only be useful for comparing the performance of two different caching policies,
+  but allow designers of such policies to identify memory access
+  patterns that are problematic for existing policies.
+We also provide our simulation and testing methodology and source to
+assist others in applying these metrics to their own
+studies.
+\end{abstract}
+
+\input{tex/01-introduction}
+\input{tex/02-motivation}
+\input{tex/03-methodology}
+\input{tex/04-results}
+\input{tex/05-analysis}
+\input{tex/06-relatedwork}
+\input{tex/07-conclusions}
+
+\bibliographystyle{abbrv}
+\bibliography{bib/main}
+
+\end{document}
