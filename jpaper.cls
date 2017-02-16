@@ -68,8 +68,8 @@
 \preauthor{\begin{center}\normalfont\large%
     \begin{tabular}[t]{c}}
 \postauthor{\end{tabular}\par\end{center}}
-\predate{}
-\postdate{}
+\predate{\begin{center}}
+\postdate{\end{center}}
 
 
 % The abstract should be normally sized and italicized. Abstract leading
